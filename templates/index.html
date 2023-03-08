@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Bcrypt Generator Clone - This is just a clone of the original thing</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', path='/favicon.ico') }}" , type="image/x-icon">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header__row">
+        <a href="/" class="header__link">Bcrypt&dash;Generator &middot; Online Bcrypt Hash Generator &amp;
+          Checker</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__inner">
+        <section class="main__encrypt">
+          <h1 class="main__encrypt-heading">Encrypt</h1>
+          <p class="main__encrypt-text">
+            Encrypt some text&period; The result shown will be a Bcrypt encrypted hash&period;
+          </p>
+
+          <div class="form">
+            <div class="js-hash-alert">
+              <div class="js-hash-result"></div>
+            </div>
+            <div class="form__group">
+              <input type="text" name="string" id="string" placeholder="String"
+                class="js-string-input form__input-string" autocomplete="off">
+              <button class="js-btn-encrypt btn btn--encrypt">Encrypt</button>
+            </div>
+
+            <div class="form__rounds js-form-rounds">
+              <label for="rounds" class="form__rounds-text">Rounds</label>
+              <div class="form__rounds-element">
+                <button data-action="decrement" class="form__rounds-minus js-rounds-minus-btn">
+                  <span data-action="decrement">&minus;</span>
+                </button>
+                <input type="number" name="rounds" id="rounds" class="js-form__rounds-number form__rounds-number"
+                  value="5" min="1" max="20" autocomplete="off">
+                <button data-action="increment" class="form__rounds-minus js-rounds-plus-btn">
+                  <span data-action="increment">&plus;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__decrypt">
+          <h1 class="main__encrypt-heading">Decrypt</h1>
+          <p class="main__encrypt-text">
+            Test your Bcrypt hash against some plaintext&comma; to see if they match&period;
+            &nbsp;
+          </p>
+
+          <div class="form__decrypt">
+            <div class="js-checking-result"></div>
+            <div class="form__group">
+              <input type="text" name="hashedString" id="hashedString" placeholder="Hash to check"
+                class="js-hash-input form__input-hash" autocomplete="off">
+            </div>
+            <div class="form__group">
+              <input type="text" name="hashToCheck" id="hashToCheck" placeholder="String to check against"
+                class="js-string-to-check-against form__input-string form__input-string-to-check" autocomplete="off">
+              <button class="js-btn-check btn btn--encrypt">Check</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="{{ url_for('static', path='/js/main.js') }}"></script>
+  </body>
+
+</html>
