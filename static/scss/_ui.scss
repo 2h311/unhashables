@@ -119,7 +119,7 @@ body {
   }
 
   &__input-string {
-    width: 72%;
+    width: 100%;
     padding: 1rem 1rem;
     font-family: inherit;
     font-size: 1.45rem;
@@ -135,7 +135,7 @@ body {
     }
 
     &-to-check {
-      width: 85%;
+      width: 90%;
     }
   }
 }
@@ -146,6 +146,7 @@ body {
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
+  display: inline-flex;
 
   &--encrypt {
     border: 1px solid black;
@@ -153,7 +154,6 @@ body {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 5px;
-    display: inline-flex;
     margin-left: -.3rem;
   }
 }

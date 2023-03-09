@@ -1,0 +1,111 @@
+@media only screen and (max-width: 1600px) {
+
+  .header__row,
+  .main__inner {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1402px) {
+
+  .header__row,
+  .main__inner {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 1282px) {
+
+  .header__row,
+  .main__inner {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1244px) {
+
+  html {
+    font-size: 68.75%;
+  }
+
+  .header__row {
+    padding: 3.2rem 0;
+  }
+
+  .header__row,
+  .main__inner {
+    width: 80%;
+  }
+
+  .main__encrypt-text {
+    font-size: 1.76rem;
+  }
+
+  .main__encrypt,
+  .main__decrypt {
+    width: 68%;
+  }
+
+  .main__inner {
+    flex-direction: column;
+    gap: 4.2rem;
+  }
+
+  .form__rounds-text {
+    font-size: 1.6rem;
+  }
+
+  .form__rounds-number {
+    font-size: 1.85rem;
+  }
+
+  .form__rounds-minus > span {
+    font-size: 2.25rem;
+  }
+
+  .form__input-hash,
+  .form__input-string,
+  .btn {
+    font-size: 1.65rem;
+  }
+
+  .header__link {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1156px) {
+
+  .main__encrypt,
+  .main__decrypt {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1019px) {
+
+  .main__encrypt,
+  .main__decrypt {
+    width: 80%;
+  }
+
+  html {
+    font-size: 62.75%;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  html {
+    font-size: 60%;
+  }
+
+  .main__encrypt,
+  .main__decrypt {
+    width: 92%;
+  }
+
+  .header__row,
+  .main__inner {
+    width: 80%;
+  }
+}
