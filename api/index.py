@@ -2,8 +2,8 @@ from pathlib import Path
 from fastapi import FastAPI, APIRouter
 from fastapi.staticfiles import StaticFiles
 
-from hasher import route_bcrypt
-from webapp import route_index
+from .hasher import route_bcrypt
+from .webapp import route_index
 
 
 def include_router(app):
