@@ -7,3 +7,4 @@ requests
 bs4
 pdfminer.six
 black
+passlib

@@ -1,7 +1,8 @@
+from pathlib import Path
 from fastapi import FastAPI, APIRouter
 from fastapi.staticfiles import StaticFiles
 
-from api import route_bcrypt
+from hasher import route_bcrypt
 from webapp import route_index
 
 
@@ -11,7 +12,9 @@ def include_router(app):
 
 
 def mount_static(app):
-    app.mount("/static", StaticFiles(directory="static"), name="static")
+    app.mount(
+        "/static", StaticFiles(directory=Path("api", "webapp", "static")), name="static"
+    )
 
 
 def start_app():

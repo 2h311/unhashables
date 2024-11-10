@@ -2,7 +2,7 @@ from typing import Optional
 
 from fastapi import FastAPI, APIRouter, Body
 
-from api.hasher import Hasher
+from .hasherfuncs import Hasher
 
 router = APIRouter()
 
